@@ -1,0 +1,35 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+
+// header
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 27px;
+  width: 100%;
+  @include mq("md") {
+    padding-top: 16px;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 100px;
+  @include mq("md") {
+    margin-left: 80px;
+  }
+}
+
+.header__link {
+  font-size: 18px;
+  color: $gray;
+  @include mq("md") {
+    font-size: 16px;
+  }
+}
