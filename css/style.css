@@ -169,3 +169,28 @@ select::-ms-expand {
     font-size: 16px;
   }
 }
+
+.fv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/FV-img.jpg);
+  background-size: contain;
+  aspect-ratio: 1440/780;
+}
+@media screen and (max-width: 768px) {
+  .fv {
+    background-image: url(../images/FV-img-sp.jpg);
+    aspect-ratio: 375/650;
+  }
+}
+
+.fv__title {
+  font-size: 64px;
+  color: #edebe9;
+}
+@media screen and (max-width: 768px) {
+  .fv__title {
+    font-size: 40px;
+  }
+}
