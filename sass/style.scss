@@ -65,13 +65,77 @@
   }
 }
 
-.story__inner {
+.story__text {
+  margin-top: 40px;
+  @include mq("md") {
+    margin-top: 30px;
+  }
+}
+
+// experience
+.experience {
+  background-color: $gray;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  @include mq("md") {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.experience__content {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  @include mq("md") {
+    flex-direction: column;
+    align-items: initial;
+  }
+}
+
+.experience__img {
+  height: auto;
+  width: calc(480 / 920 * 100%);
+  @include mq("md") {
+    width: 100%;
+  }
+}
+
+.experience__text {
+  margin-left: 40px;
+  @include mq("md") {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+// footer
+.footer {
+  background-color: $gray;
+  padding-bottom: 40px;
+  @include mq("md") {
+    padding-bottom: 20px;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: $black;
+  display: block;
+  text-align: center;
+  @include mq("md") {
+    font-size: 12px;
+  }
+}
+
+// 共通スタイル
+.inner {
   max-width: 920px + 30px * 2; // 　innerの幅とpaddingの幅を合わせる
   margin-inline: auto;
   padding-inline: 30px;
 }
 
-.story__title {
+.title {
   font-size: 46px;
   color: $black;
   @include mq("md") {
@@ -79,14 +143,12 @@
   }
 }
 
-.story__text {
+.text {
   font-size: 16px;
   color: $black;
   line-height: calc(36 / 16);
-  margin-top: 40px;
   @include mq("md") {
     font-size: 14px;
     line-height: calc(30 / 14);
-    margin-top: 30px;
   }
 }
